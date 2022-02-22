@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: black;
+    min-height: 50px;
+}
+
+.container {
+    background-color: yellowgreen;
+    min-height: 50px;
+    width: 70%;
+
+}
+
+
+
+
+
+/* add gap 1.5em */

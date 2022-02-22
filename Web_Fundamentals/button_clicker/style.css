@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 50%;
+    margin: 0px auto;
+    
+}
+
+.dojonary_search {
+    height: 50px;
+    background-color: lightgrey;
+    margin-bottom: 35px;
+    justify-content: space-around;
+    display: flex;
+}
+
+.ninja {
+    width: 400px;
+    height: 150px;
+    border: 5px solid black;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 25px;
+    align-items: center;
+    padding: 10px;
+}
+
+.ninja_bottom {
+    height: 150px;
+    margin-top: 25px;
+    border: 5px solid black;
+    justify-content: center;
+}
+
+.add_definition {
+    width: 300px;
+    height: 120px;
+    border: 5px solid black;
+    margin-left: 15px;
+    /* align-items: flex; */
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+}
+
+.button1 {
+    background-color: blue;
+    width: 50px;
+    height: 30px;
+    box-shadow: 2px 5px black;
+    color: white;
+}
+
+.button2 {
+    width: 80px;
+    height: 25px;
+    background-color: #ffc107;
+    margin-top: 10px;
+}
+
+.button3 {
+    height: 30px;
+    width: 100px;
+    background-color: #28a745;
+}

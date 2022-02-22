@@ -1,0 +1,33 @@
+.container {
+    margin: 0px auto;
+    display: block;
+}
+
+h1 {
+    font: 150;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.top, .middle, .bottom {
+    flex: 1;
+    width: 950px;
+    height: 200px;
+}
+
+.top {
+    background-color: black;
+}
+
+.middle {
+    background-color: darkred;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle img {
+    height: 100%;
+}
+
+.bottom {
+    background-color: goldenrod;
+}

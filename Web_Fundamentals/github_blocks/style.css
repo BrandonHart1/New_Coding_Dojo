@@ -1,0 +1,25 @@
+.container {
+    width: 800px;
+    margin: 0px auto;
+    justify-content: center;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    padding: 10px;
+    margin-top: 10px;
+    justify-content: space-evenly;
+}
+.top__bar {
+    background-color: aqua;
+}
+
+.middle__bar {
+    padding: 10px; 
+    background-color: bisque;
+}
+
+img {
+    width: 200px;
+}

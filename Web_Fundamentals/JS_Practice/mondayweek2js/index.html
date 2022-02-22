@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Deeper Dive</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h2 onclick="changeText(this)">the "this" keyword</h2>
+    <p onclick="changeText(this)">The "this" keyword changes depending on the context in which it is used.</p>
+    <button onclick="(this)">CLICK ME</button>
+
+    <div class="box" onmouseover="hoverover(this)" onmouseout="(this)"></div>
+
+
+
+    <!-- ############################################### -->
+    <script src="script.js"></script>
+</body>
+</html>

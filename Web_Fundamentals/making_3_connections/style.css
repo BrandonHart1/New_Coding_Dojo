@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ###################### Nav Header ########################## */
+
+.nav_links {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    min-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+/* ###################### All Boxes ########################### */
+
+.container {
+    width: 70%;
+    min-height: 200px;
+    margin: 0 auto;
+}
+
+/* ########################################################## */
+
+.hero {
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+/* ########################################################## */
+
+.hero_left {
+    
+}
+
+/* #################### Left Side Top Box ####################### */
+
+.hero_left_top {
+    min-height: 80px;
+}
+
+.left_top_bar {
+    min-height: 20px;
+    background-color: black;
+    color: yellowgre;
+}
+
+.left_top_main {
+    background-color: yellowgreen;
+    min-height: 10px;
+    margin-top: 10px;
+}
+
+.hero_left_bottom {
+    background-color: lightskyblue;
+    min-height: 50px;
+    margin-top: 20px;
+}
+
+/* ####################### Left Side Bottom Box ################## */
+
+.edu_bar {
+    background-color: black;
+    min-height: 10px;
+    color: lightskyblue;
+    padding: 5px;
+}
+
+.cd_description {
+    min-height: 50px;
+    padding: 10px;
+}
+
+/* ########################################################## */
+
+.hero_right {
+    min-height: 60px;
+    margin: 20px 20px;
+}
+
+.hero_right_top {
+    margin-bottom: 20px;
+}
+
+/* ################### Right Side Top Box #################### */
+
+.request_top {
+    background-color: black;
+    /* min-height: 10px; */
+    display: flex;
+    color: white;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    padding: 5px;
+}
+
+.number {
+    padding: 10px;
+    background-color: lightgrey;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.request_main {
+    min-height: 50px;
+    margin-bottom: 20px;
+}
+
+.request_bottom {
+    background-color: wheat;
+    min-height: 50px;
+    display: flex;
+}
+
+
+
+
+/* #################### Right Side Bottom ####################### */
+
+.hero_right_bottom {
+    background-color: sienna;
+    min-height: 50px;
+}
+
+.your_conn_bar {
+    background-color: tan;
+    min-height: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.your_conn_main {
+    background-color: tomato;
+    min-height: 20px;
+}
+
+.flex {
+    display: flex;
+}
+
+
+/* .request_main {
+    display: flex;
+} */
+
+
+/* ######################## Images and Icons ####################### */
+
+.seattle_flex img {
+    border-radius: 50%;
+    height: 50px;
+}
+
+.gear_flex img {
+    height: 20px;
+}
+
+.your_conn_main img{
+    height: 40px;
+    padding: 5px;
+}
+
+.todd img {
+    height: 50px;
+}
+
+.phil img {
+    height: 50px;
+}
+
+.check_x img {
+    height: 40px;
+    padding: 5px;
+}
+
+
+
+li {
+    margin: 10px;
+}
+
+.conn_bar {
+    background-color: lightgrey;
+    border-radius: 50%;
+}
+
+.btn {
+    color: lightskyblue;
+    background-color: black;
+    height: 30px;
+}
+
+
+
+/* ########################################################## */
+/* ########################################################## */
+/* ########################################################## */
+/* ########################################################## */
+/* ########################################################## */
+/* ########################################################## */
+/* ########################################################## */
+/* ########################################################## */

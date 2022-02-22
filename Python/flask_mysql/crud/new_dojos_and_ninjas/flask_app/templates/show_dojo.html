@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Dojo</title>
+</head>
+<body>
+    <h1>Show Dojo</h1>
+    <!-- Only showing one dojo??? -->
+    <div>
+        {% for dojo in dojos %}
+        <h3>Dojo: <a href="/dojo/{{ dojo.id }}"> {{ dojo.name }}</a></h3>   <!--  Does this need to be ninja.dojos_id when its routed back??? -->
+        {% endfor %}
+    </div>
+</body>
+</html>

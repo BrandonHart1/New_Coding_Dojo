@@ -1,0 +1,36 @@
+.container {
+    margin: 0px auto;
+}
+
+.top {
+    background-color: blue;
+    height: 75px;
+}
+
+.card {
+    width: 600px;
+    background-color: silver;
+}
+
+.top img {
+    height: 60px;
+    margin-left: 15px;
+    margin-top: 45px;
+}
+
+.bottom img {
+    height: 20px;
+    margin-right: 5px;
+}
+
+.bottom {
+    padding: 15px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+/* .top isn't showing up */
+
+/* nned to size the icons */

@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+/* ********************************************************************* */
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: silver;
+    /* justify-content: center; */
+    /* box-sizing: border-box; */
+}
+/* ********************************************************************* */
+
+.container {
+    padding: 0 20%;
+    /* display: flex;
+    justify-content: center; */
+}
+
+
+/* ********************************************************************* */
+
+.network_bar {
+    height: 40px;
+    color: white;
+    background-color: black;
+    padding: 10px;
+}
+/* ********************************************************************** */
+
+.main {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ********************************************************************** */
+
+.avatar_box {
+    display: flex;
+    border: 5px solid white;
+    height: 300px;
+    width: 150px;
+    margin-top: 20px;
+    flex-direction: column;
+    justify-content: center;
+    font-family: anton;
+    align-items: center;
+    box-shadow: 20px 20px 20px rgb(78, 78, 78);
+}
+
+/* ********************************************************************** */
+
+.box_right {
+    /* flex-direction: column; */
+    /* box-shadow: 10px 10px darkgray; */
+
+}
+
+/* ********************************************************************** */
+
+.l_david {
+    height: 70px;
+    border-radius: 50%;
+}
+
+.avatar_box {
+    flex-direction: column;
+}
+
+/* ********************************************************************** */
+
+.top_box, .bottom_box {
+    border: 5px solid white;
+    /* padding: 10px; */
+    margin-bottom: 20px;
+    width: 400px;
+    height: 100px;
+    font-family: anton;
+    box-shadow: 20px 20px 20px rgb(78, 78, 78);
+
+}
+
+/* ********************************************************************** */
+
+.middle_box {
+    border: 5px solid white;
+    width: 400px;
+    height: 100px;
+    font-family: anton;
+    box-shadow: 20px 20px 20px rgb(78, 78, 78);
+    margin-bottom: 20px;
+} 
+
+/* ********************************************************************** */
+
+.top_of_main {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+
+/* ********************************************************************** */
+
+.bottom_main {
+    padding-top: 8px;
+}
+
+/* ********************************************************************** */
+
+.like_button {
+    width: 80px;
+    height: 25px;
+    background-color: #ffc107;
+    box-shadow: 5px 5px lightgrey;
+    cursor: pointer;
+    transition: 0.5s;
+}

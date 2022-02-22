@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liking Likes Part 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ########################### Full Container ############################################ -->
+    <div class="container">
+        <!-- Top Bar with "Network"-->
+        <h1 class="network_bar">Network</h1>
+        <!-- Main page with one vertical box on the left and three horizontal on the right -->
+        <div class="main">
+            <!-- Left side of main (James Doe Avatar Box) -->
+            <div class="avatar_box">
+                <img class="l_david" src="images/square_photo_larry.jpeg" alt="Larry David">
+                <p><span class="add_avatar">Avatar of a legend</span></p>
+                <div class="name">TBD</div>
+            </div>
+            <!-- Right side of the main page -->
+            <div class="box_right">
+                <!-- Top box on the right side -->
+                <div class="top_box">
+                    <div class="feed_boxes">
+                        <!-- Top of the box with name "likes" and like button -->
+                        <div class="top_of_main">
+                            <div class="some_user">User 1</div>
+                            <p id="likes_section">0</p><p>like(s)</p>
+                            <button class="like_button" onclick="addLikes()">Like</button>
+                        </div>
+                        <!-- Bottom part of the box with random filler text -->
+                        <div class="bottom_main">
+                            <p>This is some filler text. It can say to like, subscribe, and comment down below.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="middle_box">
+                    <div class="feed_boxes">
+                        <!-- Top of the box with name "likes" and like button -->
+                        <div class="top_of_main">
+                            <div class="some_user">User 2</div>
+                            <p id="likes_section_2">0</p><p>like(s)</p>
+                            <button class="like_button" onclick="addLikesTwo()">Like</button>
+                        </div>
+                        <!-- Bottom part of the box with random filler text -->
+                        <div class="bottom_main">
+                            <p>This is some filler text. It can say to like, subscribe, and comment down below.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom_box">
+                    <div class="feed_boxes">
+                        <!-- Top of the box with name "likes" and like button -->
+                        <div class="top_of_main">
+                            <div class="some_user">User 3</div>
+                            <p id="likes_section_3">0</p><p>like(s)</p>
+                            <button class="like_button" onclick="addLikesThree()">Like</button>
+                        </div>
+                        <!-- Bottom part of the box with random filler text -->
+                        <div class="bottom_main">
+                            <p>This is some filler text. It can say to like, subscribe, and comment down below.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

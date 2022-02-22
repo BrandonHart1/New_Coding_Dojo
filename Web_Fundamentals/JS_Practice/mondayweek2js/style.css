@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+h1 {
+    background-color: gray;
+}
+
+#box {
+    background-color: hotpink;
+    height: 300px;
+    width: 300px;
+}

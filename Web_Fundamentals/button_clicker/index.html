@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- width of the containter is the same.################ -->
+    <div class="container">
+        <div class="dojonary_search">
+            <h1>Dojonary</h1>
+            <input class="search_btn" type="text" placeholder="Search" name="search">
+            <button class="button1" onclick="displayLogout(this)">Login</button>
+        </div>
+        <div class="main">
+            <div class="two_ninjas">
+                <div class="ninja">
+                    <div class="left">
+                        <h1>ninja</h1>
+                        <h3>noun</h3>
+                        <h4>Plural: ninjas</h4>
+                        <button class="button2" onclick="displayLikes(this)">likes</button>
+                    </div>
+                    <div>
+                        <p>A practioner skilled in the <span style="color:blue">Japanese </span>art of <span style="color:blue">ninjutsu</span></p>
+                    </div>
+                </div>
+                <div class="ninja">
+                    <div class="left">
+                        <h1>ninja</h1>
+                        <h3>noun</h3>
+                        <h4>Plural: ninjas</h4>
+                        <button class="button2" onclick="displayLikes(this)">likes</button>
+                    </div>
+                    <div>
+                        <p>A practitioner skilled in the <span>
+                        <p>A <span style="color:blue">programmer </span>who breaks down problems with <span style="color:blue">zen</span>-like focus</p>
+                    </div>
+                </div>
+            </div>
+            <div class="add_definition">
+                <h2>Dojonary is</h2>
+                <h3>defined by YOU</h3>
+                <button class="button3" onclick="hideDefinition(this)">Add Definition</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
