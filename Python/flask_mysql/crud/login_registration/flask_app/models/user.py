@@ -14,6 +14,10 @@ class User():
         self.created_at = data['created_at']
         self.updated_at = data['updated_at']
 
+# -----------------------------------------------------------------------------
+# ----- Make sure user info is valid -----
+
+
     @classmethod
     def create_new_user(cls, data):
         query = "INSERT INTO users (first_name, last_name, email, password) VALUES (%(first_name)s, %(last_name)s, %(email)s, %(password)s);"
@@ -29,21 +33,20 @@ class User():
         
         # ----- if the user doesn't exist, add to db.  If user exists, don't add to db.
 
-        if len(results) == 0:
+        if len(results) < 1:   # Length needs to be 1 or more.
             return False
             
-        else:
-            return User(results[0])  # ----- return a new instance of the User class -----
 
+        return User(results[0])  # ----- return a new instance of the User class -----
 
+# ---------- Validate that the user isn't already in use ----------
     @staticmethod
     def validate_new_user(data):
         is_valid = True
 
-        # if email is/isn't available
         email_regex = re.compile(r'^[a-zA-Z0-9.+_-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]+$')
 
-
+# ----- Validate a valid name and password -----
         if len(data['first_name']) < 2:
             is_valid = False
             flash('First Name needs to be at least 2 characters')
@@ -56,6 +59,7 @@ class User():
             is_valid = False
             flash('Password needs to be at least 8 characters')
 
+        # ----- if email is/isn't available -----
         if User.get_user_by_email(data):
             is_valid = False
             flash("Email is Already Taken")
@@ -64,8 +68,17 @@ class User():
             is_valid = False
             flash('Email Format is Invalid')
 
-        if not data['password'] == data['confirm_password']:
+        if data['password'] != data['confirm_password']:
             is_valid = False
+            flash("Password Needs To Be the Same")
 
 
         return is_valid
+
+
+
+        # -----------------------------------------------------------------------------
+# [x] No matter the email, it comes up as "Email Already Exists" (Fixed)
+# [x] Only receiving one flash for multiple problem on Register (Maybe Fixed)
+# [x] Login page doesn't route to success page
+# [x] New register not showing up in the db

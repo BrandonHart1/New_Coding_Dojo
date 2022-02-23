@@ -47,6 +47,11 @@ class SinglyLinkedList {
     addToTail() {
         // adds node to tail rather than head
     }
+
+    contains(value) {
+        // returns true if the linked list contains a node with the given value
+        // false otherwise
+    }
 }
 
 var new_sll = new SinglyLinkedList();
