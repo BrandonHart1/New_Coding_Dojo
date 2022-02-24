@@ -1,7 +1,7 @@
 from flask_app import app  
 
 from flask import render_template, redirect, session, request, flash
-from flask_app.models.user import User
+from flask_app.models.user_model import User
 from flask_bcrypt import Bcrypt
 from flask import flash
 bcrypt = Bcrypt(app)
@@ -48,24 +48,13 @@ def user_login():
 
     # if the passwords matched, we set the user_id into session
     session['user_id'] = user.id
-    session['first_name'] = user.first_name
-    # ----- Storing the name into session -----
-
+    session['first_name'] = user.first_name    # <<<----- Storing the name into session -----
 
     # print("____________________________________________________________________")
     # print(session)
     # never render on a post!!!
-    return redirect("/success")
+    return redirect('/recipes')
 
-# ----- Success Page -----
-@app.route('/success')
-def success():
-    
-    # ----- checking if the key 'user id' is in session
-    if not 'user_id' in session:
-        return redirect('/')
-
-    return render_template('success.html')
 
 
 @app.route('/users/logout', methods=['POST'])

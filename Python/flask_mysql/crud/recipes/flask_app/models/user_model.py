@@ -1,5 +1,5 @@
 from flask_app.config.mysqlconnection import connectToMySQL
-from flask_app.controllers import users
+from flask_app.controllers import users_controller
 from flask import flash
 
 import re
@@ -22,14 +22,14 @@ class User():
     def create_new_user(cls, data):
         #----- Inserting the record into the database -----
         query = "INSERT INTO users (first_name, last_name, email, password) VALUES (%(first_name)s, %(last_name)s, %(email)s, %(password)s);"
-        result = connectToMySQL("login_reg").query_db(query, data)
+        result = connectToMySQL("recipes_schema").query_db(query, data)
 
 
     @classmethod
     def get_user_by_email(cls, data):
         # ----- Running a query to get all users by email -----
         query = "SELECT * FROM users WHERE email = %(email)s"   
-        results = connectToMySQL("login_reg").query_db(query, data)
+        results = connectToMySQL("recipes_schema").query_db(query, data)
         
         # ----- if the user doesn't exist, add to db.  If user exists, don't add to db.
 

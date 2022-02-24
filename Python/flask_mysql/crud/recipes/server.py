@@ -1,8 +1,5 @@
-
-# --------------- Import flask which allows app to be created ---------------
 from flask_app import app
-
-from flask_app.controllers import users
+from flask_app.controllers import users_controller, recipes_controller
 
 # -----------import controllers here--------------
 
